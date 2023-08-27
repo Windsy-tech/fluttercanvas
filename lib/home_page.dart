@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fluttercanvas/bouncing_balls.dart';
 import 'package:fluttercanvas/charts/line_chart.dart';
+import 'package:fluttercanvas/mesmerize.dart';
 import 'package:fluttercanvas/solar_system.dart';
 
 class HomePage extends StatelessWidget {
@@ -56,6 +57,19 @@ class HomePage extends StatelessWidget {
                     );
                   },
                   child: const Text("Line Chart"),
+                ),
+
+                //Line Chart
+                TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const MesmerizeWidget(),
+                      ),
+                    );
+                  },
+                  child: const Text("Mesmerize"),
                 ),
               ],
             ),
